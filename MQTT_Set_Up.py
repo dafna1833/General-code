@@ -15,9 +15,12 @@ def on_subscribe(client, userdata, mid, granted_qos):
 def on_message(client, userdata, msg):
 	print("Message received. Topic: {}. Payload: {}".format(msg.topic,str(msg.payload)))
 
+<<<<<<< HEAD
 
 #comment
 
+=======
+>>>>>>> 8caeb2f971d76f0fba8d9601b41eb5a016be4043
 if __name__ == "__main__":
 	client = mqtt.Client(protocol=mqtt.MQTTv311)
 	client.on_connect = on_connect
